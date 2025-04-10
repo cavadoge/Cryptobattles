@@ -1,4 +1,5 @@
 # GameManager.gd
+# adding comments to test git
 extends Node
 
 @export var market_update_interval: float = 30.0
