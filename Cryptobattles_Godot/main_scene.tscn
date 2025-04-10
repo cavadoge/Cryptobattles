@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://cid57pca5mhbn"]
+
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_dqx8t"]
+
+[node name="Main_Scene" type="Node"]
+
+[node name="Game_Manager" type="Node" parent="."]
+script = ExtResource("1_dqx8t")
+
+[node name="Event_Manager" type="Node" parent="Game_Manager"]
+
+[node name="RandomEvent_Manager" type="Node" parent="Game_Manager/Event_Manager"]
+
+[node name="Milestone_Manager" type="Node" parent="Game_Manager/Event_Manager"]
+
+[node name="Budget_Manager" type="Node" parent="Game_Manager"]
+
+[node name="Market_Manager" type="Node" parent="Game_Manager"]
+
+[node name="Community_Manager" type="Node" parent="Game_Manager"]
+
+[node name="Player_Actions" type="Node" parent="."]
+
+[node name="Team_Management" type="Panel" parent="Player_Actions"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Marketing_Manager" type="Node" parent="Player_Actions"]
+
+[node name="Presale_Manager" type="Node" parent="Player_Actions"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Main_Ui" type="Panel" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Chat_UI" type="Panel" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SocialMedia_UI" type="Panel" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Milestone_UI" type="Panel" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
